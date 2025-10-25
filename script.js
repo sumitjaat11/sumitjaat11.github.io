@@ -13,55 +13,6 @@
 
 const resources = [
     {
-        search_link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        display_title: "Web Development Tutorial",
-        resources: [
-            { name: "GitHub Repository", link: "https://github.com/example/web-dev" },
-            { name: "Documentation", link: "https://docs.example.com" },
-            { name: "Starter Template", link: "https://template.example.com" },
-            { name: "VSCode Extensions", link: "https://marketplace.visualstudio.com/example" }
-        ]
-    },
-    {
-        search_link: "https://www.youtube.com/watch?v=example123",
-        display_title: "JavaScript Basics Course",
-        resources: [
-            { name: "Code Examples", link: "https://github.com/example/js-basics" },
-            { name: "Cheat Sheet PDF", link: "https://example.com/cheatsheet.pdf" },
-            { name: "Practice Exercises", link: "https://codepen.io/example/js-exercises" }
-        ]
-    },
-    {
-        search_link: "https://www.youtube.com/watch?v=abcd1234",
-        display_title: "React Complete Guide",
-        resources: [
-            { name: "React Documentation", link: "https://react.dev" },
-            { name: "Project Source Code", link: "https://github.com/example/react-guide" },
-            { name: "Component Library", link: "https://ui.example.com" },
-            { name: "Deployment Guide", link: "https://example.com/deploy" },
-            { name: "Best Practices", link: "https://example.com/react-best-practices" }
-        ]
-    },
-    {
-        search_link: "https://www.youtube.com/watch?v=xyz789",
-        display_title: "Python for Beginners",
-        resources: [
-            { name: "Python Installation", link: "https://python.org/downloads" },
-            { name: "Course Materials", link: "https://github.com/example/python-course" },
-            { name: "Online IDE", link: "https://replit.com/@example/python" }
-        ]
-    },
-    {
-        search_link: "https://www.youtube.com/watch?v=node123",
-        display_title: "Node.js & Express Tutorial",
-        resources: [
-            { name: "Express.js Docs", link: "https://expressjs.com" },
-            { name: "API Template", link: "https://github.com/example/node-api" },
-            { name: "Database Setup", link: "https://example.com/db-setup" },
-            { name: "Authentication Guide", link: "https://example.com/auth" }
-        ]
-    },
-    {
         search_link: "https://www.youtube.com/watch?v=css456",
         display_title: "CSS Advanced Techniques",
         resources: [
@@ -94,29 +45,9 @@ const resources = [
 
 const quickLinks = [
     {
-        display_name: "MDN Web Docs",
-        description: "The ultimate resource for web developers with comprehensive documentation",
-        link: "https://developer.mozilla.org"
-    },
-    {
-        display_name: "Stack Overflow",
-        description: "Get help from the developer community and find solutions to coding problems",
-        link: "https://stackoverflow.com"
-    },
-    {
-        display_name: "GitHub",
-        description: "Explore millions of repositories and collaborate on open source projects",
-        link: "https://github.com"
-    },
-    {
-        display_name: "CodePen",
-        description: "Build, test, and discover front-end code with an online code editor",
-        link: "https://codepen.io"
-    },
-    {
-        display_name: "Can I Use",
-        description: "Check browser support for HTML, CSS, and JavaScript features",
-        link: "https://caniuse.com"
+        display_name: "Discord",
+        description: "for chatting ig",
+        link: "https://discord.com"
     },
     {
         display_name: "CSS-Tricks",

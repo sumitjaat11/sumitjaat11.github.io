@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Hub - Find Your Video Links</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 12L14 5v4c-7 0-11 4-13 10 2-4 5-6 13-6v4l7-7z" fill="#8b5cf6"/>
+                </svg>
+                <span>Resource Hub</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle">☀️</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find Your Video <span class="gradient-text">Links</span></h1>
+            <p class="subtitle">Search, organize, and access your video links in one place</p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Paste your video link here to find links...">
+                    <button class="search-btn" id="searchBtn">Search</button>
+                </div>
+                <div class="info-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <p>Paste a video link above to instantly find all links associated with that video. Each resource card contains related links you can unlock and access.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="back-button-container hidden" id="backButtonContainer">
+            <button class="back-btn" id="backBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to All Resources
+            </button>
+        </div>
+
+        <section class="quick-links" id="quickLinksSection">
+            <h2>Quick Access Links</h2>
+            <p class="section-subtitle">Frequently used resources and important links</p>
+            <div class="quick-links-grid" id="quickLinksGrid"></div>
+        </section>
+
+        <section class="resources" id="resourcesSection">
+            <h2 id="resourcesTitle">Available Resources</h2>
+            <p class="section-subtitle" id="resourcesSubtitle">Browse through our collection of video resources</p>
+            <div class="resources-grid" id="resourcesGrid"></div>
+        </section>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <div class="modal-body" id="modalBody">
+                <div class="unlock-screen" id="unlockScreen">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <h4>Content Locked</h4>
+                    <p>Click the button below to unlock all resources</p>
+                    <button class="unlock-btn" id="unlockBtn">Click to Unlock All</button>
+                </div>
+                <div class="countdown-screen hidden" id="countdownScreen">
+                    <div class="spinner"></div>
+                    <h4>Unlocking Resources...</h4>
+                    <p class="countdown-text">Please wait <span id="countdown">10</span> seconds</p>
+                </div>
+                <div class="resources-screen hidden" id="resourcesScreen">
+                    <div class="success-message">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <p>Resources Unlocked!</p>
+                    </div>
+                    <button class="open-btn" id="openBtn">Open Resources</button>
+                </div>
+                <div class="links-list hidden" id="linksList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

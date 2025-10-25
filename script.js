@@ -30,7 +30,16 @@ const resources = [
             { name: "Animation Examples", link: "https://codepen.io/example/animations" },
             { name: "Animation Examples 2", link: "https://coo/example/animations" }
         ]
-    }
+    },
+    {
+        search_link: "https://www.youtube.com/watch?v=csssss",
+        display_title: "another example",
+        resources: [
+            { name: "CSS Grid Guide", link: "https://css-tricks.com/grid" },
+            { name: "Flexbox Cheatsheet", link: "https://flexbox.example.com" },
+            { name: "Animation Examples", link: "https://codepen.io/example/animations" }
+        ]
+    },
 ];
 
 // ==========================================
